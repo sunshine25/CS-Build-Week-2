@@ -3,7 +3,6 @@ import requests
 import time
 import sys
 import json
-from decouple import config
 from visited_rooms import visited_rooms
 
 
@@ -22,7 +21,7 @@ shrine2 = 374
 # Add power abilites (STRETCH)
 
 node = "https://lambda-treasure-hunt.herokuapp.com/api"
-headers = {"Authorization": config('API_KEY')}
+headers = {"Authorization": "Token f976aafe27b40a76a602b84c15df748b3c6d7403"} # hard code this
 
 # def wise_map(visited):
 #     # Get the current room information
@@ -129,4 +128,4 @@ def room_search(visited_rooms, starting_room, target):
                 pass
 
 
-room_search(visited_rooms, starting_room, name_change)
+room_search(visited_rooms, starting_room, well)

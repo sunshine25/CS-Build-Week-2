@@ -3,12 +3,12 @@ import requests
 import time
 import sys
 import json
-from decouple import config
+#from decouple import config
 
 
 if __name__ == '__main__':
     node = "https://lambda-treasure-hunt.herokuapp.com/api"
-    headers = {"Authorization": config('API_KEY')}
+    headers = {"Authorization": "Token f976aafe27b40a76a602b84c15df748b3c6d7403"} 
 
     def moving_function(direction, room_id=None):
         if room_id is None:
@@ -96,6 +96,9 @@ if __name__ == '__main__':
         # Check if it's been visited
         # If it has not been visited...
         if room["room_id"] not in visited_rooms:
+            if room["room_id"] == 2:
+                print("You are in room 2")
+                break
             # Mark it as visited
             print("stack", room["room_id"])
             print("room visited", len(visited_rooms))
@@ -224,7 +227,7 @@ if __name__ == '__main__':
                         new_path = path.copy()
                         new_path.append("w")
                         paths.append(new_path)
-                        queue.append(visited[room_id]["w"])
+                        queue.append(visited_rooms[room_id]["w"])
                     if "e" in visited_rooms[room_id]:
                         new_path = path.copy()
                         new_path.append("e")

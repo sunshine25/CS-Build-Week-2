@@ -3,9 +3,9 @@ visited_rooms = {
         "e": 4,
         "n": 10,
         "s": 2,
-        "w": 1
+        "w": 1 # this is the store
     },
-    "1": {
+    "1": { # this is the store
         "e": 0
     },
     "2": {
@@ -117,7 +117,7 @@ visited_rooms = {
         "e": 18
     },
     "26": {
-        "e": 55,
+        "e": 55, # this is the well
         "w": 23
     },
     "27": {
@@ -243,7 +243,7 @@ visited_rooms = {
     "54": {
         "w": 32
     },
-    "55": {
+    "55": { # this is the well
         "w": 26
     },
     "56": {
@@ -1368,7 +1368,7 @@ visited_rooms = {
     "325": {
         "n": 353,
         "s": 280,
-        "w": 374
+        "w": 374 # this is a shrine
     },
     "326": {
         "s": 342,
@@ -1563,7 +1563,7 @@ visited_rooms = {
         "n": 307,
         "s": 480
     },
-    "374": {
+    "374": { # this is a shrine
         "e": 325
     },
     "375": {
@@ -1657,7 +1657,7 @@ visited_rooms = {
     },
     "399": {
         "n": 362,
-        "s": 467
+        "s": 467 # name changer
     },
     "400": {
         "s": 369
@@ -1868,7 +1868,7 @@ visited_rooms = {
         "w": 499
     },
     "457": {
-        "n": 461,
+        "n": 461, # this is a shrine
         "s": 426
     },
     "458": {
@@ -1881,7 +1881,7 @@ visited_rooms = {
     "460": {
         "w": 433
     },
-    "461": {
+    "461": { # this is a shrine
         "s": 457
     },
     "462": {
@@ -1903,7 +1903,7 @@ visited_rooms = {
         "s": 486,
         "w": 446
     },
-    "467": {
+    "467": { # name changer
         "n": 399
     },
     "468": {
